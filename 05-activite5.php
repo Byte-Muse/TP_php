@@ -15,13 +15,13 @@ if (
 ) { 
 
     $produit = $_POST["produit"];
-    $produit = $_POST["category"];
+    $category = $_POST["category"];
     $prix = $_POST["prix"];
     $quantite = $_POST["quantite"];
 
     if (
         $produit != ""
-        && $produit != ""
+
         && $prix > 0
         && $quantite > 0
     ) {
@@ -162,6 +162,11 @@ if (
         <p>
             Produit :
             <?php echo htmlspecialchars($produit); ?>
+        </p>
+
+        <p>
+            Category :
+            <?php echo htmlspecialchars($category); ?>
         </p>
 
         <p>
